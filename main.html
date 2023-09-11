@@ -10,6 +10,18 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			       let flag = 0;
+      for(let i =0;i<arr.length;i++){
+        if(arr[i]==arr[i+1]){
+          flag = 1;
+        }
+      }
+  
+       if(flag==1){
+         return Number.NEGATIVE_INFINITY;
+       }
+
+      
 			let mx =Number.NEGATIVE_INFINITY;
       let mxind = 0;
       for(let i =0;i<arr.length;i++){
@@ -28,6 +40,7 @@
         }
       }
   return mxsd;
+  
 		}
 
 		function Main() {
