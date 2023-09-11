@@ -10,7 +10,24 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			let mx =Number.NEGATIVE_INFINITY;
+      let mxind = 0;
+      for(let i =0;i<arr.length;i++){
+        if(arr[i]>mx){
+          mx = arr[i];
+          mxind=i;
+        }
+      }
+  
+      let mxsd = Number.NEGATIVE_INFINITY;
+       for(let i =0;i<arr.length;i++){
+        if(arr[i]>mxsd && mxind!=i){
+          
+          mxsd = arr[i];
+          
+        }
+      }
+  return mxsd;
 		}
 
 		function Main() {
